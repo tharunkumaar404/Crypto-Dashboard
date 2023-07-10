@@ -19,7 +19,7 @@ export default class App extends Component {
   }
 
   handleSubmit = async (event) => {
-    await this.setState({Id: event.target.value, Data: this.state.Data})
+    await this.setState({ Id: event.target.value, Data: this.state.Data })
     this.fetchData()
   }
 
@@ -30,7 +30,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header handleSubmit={this.handleSubmit}/>
+        <Header handleSubmit={this.handleSubmit} />
         <CardSection coinName={this.state.Data.name}
           mCap24={this.state.Data.market_data ?
             this.state.Data.market_data.market_cap_change_percentage_24h : ""}
@@ -40,7 +40,15 @@ export default class App extends Component {
             this.state.Data.market_data.atl.inr : ""}
           sentiment={this.state.Data.sentiment_votes_up_percentage}
           high24={this.state.Data.market_data ? this.state.Data.market_data.high_24h.inr : ""}
-          mCapRank={this.state.Data.market_data ? this.state.Data.market_data.market_cap_rank : ""}/>
+          mCapRank={this.state.Data.market_data ? this.state.Data.market_data.market_cap_rank : ""}
+          currentPrice={this.state.Data.market_data ? this.state.Data.market_data.current_price.inr : ""}
+        />
+        <ChartSection Id={this.state.Id} priceChange24={this.state.Data.market_data ? this.state.Data.market_data.price_change_24h_in_currency.inr : ""}
+        MarketCap={this.state.Data.market_data ? this.state.Data.market_data.market_cap.inr : ""}
+        TotalVolume={this.state.Data.market_data ? this.state.Data.market_data.total_volume.inr : ""}
+        Circulating={this.state.Data.market_data ? this.state.Data.market_data.circulating_supply : ""}
+        twitterFollowers={this.state.Data.community_data ? this.state.Data.community_data.twitter_followers : ""}
+         />
       </div>
     )
   }

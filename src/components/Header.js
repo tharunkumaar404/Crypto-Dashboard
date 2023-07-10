@@ -21,7 +21,7 @@ export class Header extends Component {
                             <option value="tether">Tether (USDT)</option>
                         </select>
 
-                        <a className="navbar-brand d-flex ml-auto display-2 fs-2 fw-bold text-uppercase"
+                        <a className="navbar-brand d-flex ml-auto display-2 fs-2 fw-bold"
                         style={{ fontFamily: "Arvo", color:"#fff"}} href="/">
                             Dashboard
                         </a>

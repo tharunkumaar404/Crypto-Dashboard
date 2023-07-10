@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './CardSection.css'
+import '../App'
 
 export class CardSection extends Component {
     render() {
@@ -11,7 +12,7 @@ export class CardSection extends Component {
                 }}>
                     {this.props.coinName}
                 </div>
-                <section className="row m-3 mb-0" style={{ marginTop: '2px !important' }}>
+                <section className="row m-6 p-3 mb-0" style={{ marginTop: '2px !important'}}>
                     <div className="card text-white text-center m-3 baseBlock"
                         style={{ width: "11rem", backgroundColor: "rgb (43, 43, 43)", marginTop: "0px !important" }}>
                         <div className="card-body">
@@ -67,6 +68,17 @@ export class CardSection extends Component {
                         </div>
                     </div>
                 </section>
+                <div>
+                    <div className="text-white text-center"
+                        style={{ fontFamily: 'Arvo', overflow: 'visible', height: '2px', marginTop: "1%" }}> Current
+                        Price</div>
+                    <div style={{
+                        fontFamily: 'Arvo', fontSize: '90px',
+                        fontWeight: '700', color: "#F1743C", textDecoration: 'none solid rgb(255, 255, 255)',
+                        textAlign: 'center'
+                    }}><span style={{fontSize:'100px'}}>₹ </span>{this.props.currentPrice}
+                    </div>
+                </div>
             </div>
         )
     }
