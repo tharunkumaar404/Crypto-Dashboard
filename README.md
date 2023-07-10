@@ -69,4 +69,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Hosted Application Link : [Crypto Dashboard](https://crypto-inr-dashboard.netlify.app/).
+### Hosted Application Link in Netlify: [Crypto INR Dashboard](https://crypto-inr-dashboard.netlify.app/).
