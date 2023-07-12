@@ -3,6 +3,12 @@ import './CardSection.css'
 import '../App'
 
 export class CardSection extends Component {
+
+    convertNumber = () => {
+        Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(this.props.currentPrice)
+
+    }
+
     render() {
         return (
             <div>

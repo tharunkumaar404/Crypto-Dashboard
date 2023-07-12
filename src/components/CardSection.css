@@ -15,7 +15,6 @@
     -ms-transform: translate(0, -8px);
     -o-transform: translate(0, -8px);
     transform: translate(0, -8px);
-    /* box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2); */
     box-shadow: 0 0 2px 2px #00AECF;
 }
 
@@ -36,6 +35,5 @@
     -ms-transform: translate(0, -8px);
     -o-transform: translate(0, -8px);
     transform: translate(0, -8px);
-    /* box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2); */
     box-shadow: 0 0 2px 2px #FF555F;
 }

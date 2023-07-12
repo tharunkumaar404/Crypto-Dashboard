@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 export class Header extends Component {
     render() {
         return (
-            <div>
-                <nav className="navbar navbar-expand-lg bg-warning" style={{fontFamily:"Arvo" ,backgroundColor:"#10548C"}}>
+            <div style={{position: "sticky", top: "0px", zIndex: "1"}}>
+                <nav className="navbar navbar-expand-lg bg-warning" style={{ fontFamily: "Arvo", backgroundColor: "#10548C" }}>
                     <div className="container-fluid">
                         <select className="form-select form-select-lg" aria-label=".form-select -lg example" name="selectCoin"
-                        style={{ width: "fit-content" }} onChange={this.props.handleSubmit}>
+                            style={{ width: "fit-content" }} onChange={this.props.handleSubmit}>
                             <option value="bitcoin">Select Coin</option>
                             <option value="avalanche-2">Avalanche (AVAX)</option>
                             <option value="binancecoin">Binance (BNB)</option>
@@ -20,9 +20,8 @@ export class Header extends Component {
                             <option value="solana">Solana (SOL)</option>
                             <option value="tether">Tether (USDT)</option>
                         </select>
-
                         <a className="navbar-brand d-flex ml-auto display-2 fs-2 fw-bold"
-                        style={{ fontFamily: "Arvo", color:"#fff"}} href="/">
+                            style={{ fontFamily: "Arvo", color: "#fff" }} href="/">
                             Dashboard
                         </a>
                     </div>

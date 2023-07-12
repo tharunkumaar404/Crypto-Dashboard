@@ -151,7 +151,7 @@ export class ChartSection extends Component {
                             <div id="chart">
                                 <div className="toolbar">
                                     <button id="one_month" style={{ borderRadius: "5px", backgroundColor: "#10548C" }}
-
+    
                                         onClick={() => this.setState({ Price: { options: { ...this.tooltip, selection: 1 }, series: this.state.Price.series } })}>
                                         1D
                                     </button>
@@ -223,13 +223,20 @@ export class ChartSection extends Component {
                                     {this.props.Circulating}
                                 </p>
                             </div>
+                            <div className="card-body ">
+                                <h6 className="card-title" style={{ fontFamily: 'Arvo' }}>Twitter Followers</h6>
+                                <p className="card-text fw-bold "
+                                    style={{ fontFamily: 'Arvo', color: 'rgb(255, 255, 255)', fontSize: 'small' }}>
+                                    {this.props.TwitterFollowers}
+                                </p>
+                            </div>
                         </div>
                         <div className="col" style={{ maxWidth: '310px' }}>
                             <div>
                                 <Chart
                                     options={this.state.Market_Cap.options}
                                     series={this.state.Market_Cap.series}
-                                    type="bar"
+                                    type="area"
                                     height='200'
                                     width='300'
                                 />
@@ -238,7 +245,7 @@ export class ChartSection extends Component {
                                 <Chart
                                     options={this.state.Tot_Vol.options}
                                     series={this.state.Tot_Vol.series}
-                                    type="bar"
+                                    type="area"
                                     height='200'
                                     width='300'
                                 />

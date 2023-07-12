@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CardSection from './components/CardSection';
 import ChartSection from './components/ChartSection';
 import Header from './components/Header';
+
+
 export default class App extends Component {
 
   constructor() {
@@ -47,8 +49,8 @@ export default class App extends Component {
         MarketCap={this.state.Data.market_data ? this.state.Data.market_data.market_cap.inr : ""}
         TotalVolume={this.state.Data.market_data ? this.state.Data.market_data.total_volume.inr : ""}
         Circulating={this.state.Data.market_data ? this.state.Data.market_data.circulating_supply : ""}
-        twitterFollowers={this.state.Data.community_data ? this.state.Data.community_data.twitter_followers : ""}
-         />
+        TwitterFollowers={this.state.Data.community_data ? this.state.Data.community_data.twitter_followers : ""}
+        />
       </div>
     )
   }
